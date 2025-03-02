@@ -29,5 +29,22 @@ namespace taskk5dlg
                 this.Opacity = 1.0;
             }
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (this.BackColor == Color.Pink)
+            {
+                this.BackColor = Color.Yellow;
+            }
+            else 
+            {
+                this.BackColor = Color.Pink;
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Для вас повідомлення: Hello World!");
+        }
     }
 }
