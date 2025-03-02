@@ -13,6 +13,7 @@ namespace taskk5dlg
     public delegate void Del(object sender, EventArgs e);
     public partial class Form1 : Form
     {
+        private Del dlg;
         public Form1()
         {
             InitializeComponent();
@@ -45,6 +46,12 @@ namespace taskk5dlg
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Для вас повідомлення: Hello World!");
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Я супермегакнопка,\nі цього мене не позбавиш!");
+            dlg?.Invoke(sender, e);
         }
     }
 }
