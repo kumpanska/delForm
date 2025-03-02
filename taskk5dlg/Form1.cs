@@ -53,5 +53,41 @@ namespace taskk5dlg
             MessageBox.Show("Я супермегакнопка,\nі цього мене не позбавиш!");
             dlg?.Invoke(sender, e);
         }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                dlg += button1_Click;
+            }
+            else 
+            {
+                dlg -= button1_Click;
+            }
+        }
+
+        private void checkBox2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox2.Checked)
+            {
+                dlg += button2_Click;
+            }
+            else
+            {
+                dlg -= button2_Click;
+            }
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox3.Checked)
+            {
+                dlg += button3_Click;
+            }
+            else
+            {
+                dlg -= button3_Click;
+            }
+        }
     }
 }
